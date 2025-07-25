@@ -14,9 +14,7 @@ class FileRepository
         $query = File::where('user_id', auth()->id());
 
         if ($request->has('search')) {
-            $query->where('original_name', 'like', '%' . $request->search . '%')
-                ->orWhere('extension', 'like', '%' . $request->search . '%')
-                ->orWhere('size', '<=', (int)$request->search);
+            $query->where('original_name', 'like', '%' . $request->search . '%');
         }
 
         return $query->latest()->get();
