@@ -9,7 +9,7 @@ A simple and secure file manager built with Laravel that allows users to upload,
 - User authentication (login/register) using Laravel Breeze
 - Private file dashboard per user
 - Upload files with validation (max 5MB, only PDF, JPG, PNG, DOCX)
-- File search by name, format, or size
+- File search by name
 - Secure storage (files are stored in private disk, not public)
 - Download & preview files only by the owner
 - Files are organized per user (`storage/app/private/files/user_{id}/`)
